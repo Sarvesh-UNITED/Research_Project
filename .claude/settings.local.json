@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell:*)",
+      "Bash(python:*)",
+      "Bash(curl:*)",
+      "Read(c:\\Users\\musri\\OneDrive\\Pictures\\Screenshots/**)",
+      "Bash(npm install:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm run dev:*)",
+      "Bash(pip install:*)",
+      "Bash(taskkill:*)",
+      "Bash(tasklist:*)",
+      "Bash(/bashes)",
+      "Bash(dir)",
+      "Bash(cmd /c:*)",
+      "Bash(find:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(dir:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

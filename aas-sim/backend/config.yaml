@@ -1,0 +1,18 @@
+currency: "EUR"
+engraver:
+  emissionFactor_g_per_kWh: 420.0
+  costPerEnergyUnit_EUR_per_kWh: 0.40
+  baseIdle_kWh: 0.02
+  k_laser_kWh_per_sec_at_power1: 0.002
+  default_powerPreset: "Standard"
+  seconds_per_letter: 0.5
+agv:
+  costPerMeter_EUR: 0.02
+  speed_m_per_s: 0.5
+progress_step: 5
+poll_interval_s: 0.05
+coords:
+  HOME: [0.0, 0.0]
+  ENGRAVER_DOCK: [5.0, 0.0]
+  JOB_POS1: [12.0, 8.0]
+  JOB_POS2: [15.0, -6.0]

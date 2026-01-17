@@ -1,0 +1,2337 @@
+{
+  "devices": {
+    "engraver": {
+      "deviceId": "engraver-001",
+      "deviceType": "Engraver",
+      "operationalData": {
+        "status": {
+          "productionProgress": 100,
+          "operationMode": "Idle",
+          "heartbeatCounter": 1260,
+          "heartbeatTimestamp": "2026-01-09T12:53:10.809017+00:00"
+        },
+        "order": {
+          "orderNo": "B-0109135202",
+          "orderType": "LaserEngraving",
+          "laserText": "vtyt",
+          "transportRequired": false,
+          "orderState": "Done",
+          "lastChangeAt": "2026-01-09T12:53:10.909711+00:00"
+        },
+        "pose": {
+          "posX": 0.0,
+          "posY": 0.0,
+          "orientation": 0.0
+        }
+      },
+      "usageBilling": {
+        "currency": "EUR",
+        "billingStatus": "Open",
+        "orderRef": "B-0109135202",
+        "lastBilledAt": "2026-01-09T12:53:10.909711+00:00",
+        "lastUpdated": "2026-01-09T12:53:10.909711+00:00",
+        "energyConsumed": 0.048,
+        "emissionFactor": 360.0,
+        "carbonEmissions": 17.28,
+        "costPerEnergyUnit": 0.4,
+        "usageCost": 0.0192,
+        "distanceTraveled": 0.0
+      }
+    },
+    "agv": {
+      "deviceId": "agv-001",
+      "deviceType": "AGV",
+      "operationalData": {
+        "status": {
+          "productionProgress": 100,
+          "operationMode": "Idle",
+          "heartbeatCounter": 22358,
+          "heartbeatTimestamp": "2026-01-09T12:53:42.299296+00:00"
+        },
+        "order": {
+          "orderNo": "",
+          "orderType": "Transport",
+          "laserText": null,
+          "transportRequired": true,
+          "orderState": "Created",
+          "lastChangeAt": "2025-12-28T20:44:48.550166+00:00"
+        },
+        "pose": {
+          "posX": 0.0,
+          "posY": 0.0,
+          "orientation": 0.0
+        }
+      },
+      "usageBilling": {
+        "currency": "EUR",
+        "billingStatus": "Open",
+        "orderRef": "BATCH-20260109-135342",
+        "lastBilledAt": "2026-01-09T12:53:42.299296+00:00",
+        "lastUpdated": "2026-01-09T12:53:42.299296+00:00",
+        "distanceTraveled": 21.260292,
+        "costPerMeter": 0.02,
+        "usageCost": 0.425206
+      }
+    }
+  },
+  "billing": {
+    "user_jobs": {
+      "engraver_energy_kWh": 0.048,
+      "engraver_co2_g": 17.28,
+      "engraver_cost_eur": 0.0192,
+      "agv_distance_m": 21.260292,
+      "agv_cost_eur": 0.425206,
+      "total_cost_eur": 0.44440599999999997,
+      "jobs_processed": [
+        "B-0109135201",
+        "B-0109135202"
+      ],
+      "last_updated": "2026-01-09T12:53:42.299296+00:00"
+    },
+    "scenario_jobs": {
+      "engraver_energy_kWh": 0.048,
+      "engraver_co2_g": 17.28,
+      "engraver_cost_eur": 0.0192,
+      "agv_distance_m": 21.260292,
+      "agv_cost_eur": 0.425206,
+      "total_cost_eur": 0.44440599999999997,
+      "jobs_processed": [
+        "E-1001",
+        "E-1002",
+        "E-1003"
+      ],
+      "last_updated": "2026-01-09T11:52:07.393952+00:00"
+    }
+  },
+  "jobs": [
+    {
+      "order_no": "E-1001",
+      "laser_text": "HELLO",
+      "letters": 5,
+      "energy_kWh": 0.025,
+      "co2_g": 9.0,
+      "cost_eur": 0.01,
+      "completed_at": "2026-01-09T11:51:31.357687+00:00",
+      "source": "scenario",
+      "agv_distance_share": 7.086764,
+      "agv_cost_share": 0.141735,
+      "timestamp": "2026-01-09T11:52:07.299396+00:00"
+    },
+    {
+      "order_no": "E-1002",
+      "laser_text": "WORLD",
+      "letters": 5,
+      "energy_kWh": 0.025,
+      "co2_g": 9.0,
+      "cost_eur": 0.01,
+      "completed_at": "2026-01-09T11:51:33.870553+00:00",
+      "source": "scenario",
+      "agv_distance_share": 7.086764,
+      "agv_cost_share": 0.141735,
+      "timestamp": "2026-01-09T11:52:07.311824+00:00"
+    },
+    {
+      "order_no": "E-1003",
+      "laser_text": "TEST",
+      "letters": 4,
+      "energy_kWh": 0.024,
+      "co2_g": 8.64,
+      "cost_eur": 0.0096,
+      "completed_at": "2026-01-09T11:51:35.882773+00:00",
+      "source": "scenario",
+      "agv_distance_share": 7.086764,
+      "agv_cost_share": 0.141735,
+      "timestamp": "2026-01-09T11:52:07.381640+00:00"
+    },
+    {
+      "order_no": "B-0109135201",
+      "laser_text": "fguyg",
+      "letters": 5,
+      "energy_kWh": 0.025,
+      "co2_g": 9.0,
+      "cost_eur": 0.01,
+      "completed_at": "2026-01-09T12:53:08.899103+00:00",
+      "source": "batch",
+      "site": "JOB_POS1",
+      "run_id": "batch_20260109_135234_2jobs",
+      "agv_distance_share": 10.630146,
+      "agv_cost_share": 0.212603,
+      "timestamp": "2026-01-09T12:53:42.317821+00:00"
+    },
+    {
+      "order_no": "B-0109135202",
+      "laser_text": "vtyt",
+      "letters": 4,
+      "energy_kWh": 0.024,
+      "co2_g": 8.64,
+      "cost_eur": 0.0096,
+      "completed_at": "2026-01-09T12:53:10.909711+00:00",
+      "source": "batch",
+      "site": "JOB_POS1",
+      "run_id": "batch_20260109_135234_2jobs",
+      "agv_distance_share": 10.630146,
+      "agv_cost_share": 0.212603,
+      "timestamp": "2026-01-09T12:53:42.333143+00:00"
+    }
+  ],
+  "history": {
+    "direct_20251228_214456_D-12282144": {
+      "runId": "direct_20251228_214456_D-12282144",
+      "site": "JOB_POS1",
+      "startedAt": "2025-12-28T21:44:56.158004",
+      "endedAt": "2025-12-28T20:46:03.814376+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "D-12282144"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "D-12282144"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "D-12282144",
+            "laser_text": "RESET_TEST",
+            "letters": 10,
+            "energy_kWh": 0.03,
+            "co2_g": 10.8,
+            "cost_eur": 0.012,
+            "completed_at": "2025-12-28T20:45:32.491451+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.06,
+        "engraverCO2g": 21.6,
+        "engraverCostEUR": 0.024,
+        "combinedCostEUR": 0.449206,
+        "orderRef": "BATCH-20251228-214603",
+        "startedAt": "2025-12-28T20:44:56.159580+00:00",
+        "endedAt": "2025-12-28T20:46:03.814376+00:00",
+        "source": "direct",
+        "mode": "individual"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null,
+      "source": "direct",
+      "mode": "individual"
+    },
+    "direct_20251228_214612_D-12282146": {
+      "runId": "direct_20251228_214612_D-12282146",
+      "site": "JOB_POS1",
+      "startedAt": "2025-12-28T21:46:12.981298",
+      "endedAt": "2025-12-28T20:47:18.145902+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "D-12282146"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "D-12282146"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "D-12282146",
+            "laser_text": "JOB_A",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2025-12-28T20:46:46.817255+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.05,
+        "engraverCO2g": 18.0,
+        "engraverCostEUR": 0.02,
+        "combinedCostEUR": 0.445206,
+        "orderRef": "BATCH-20251228-214718",
+        "startedAt": "2025-12-28T20:46:12.983402+00:00",
+        "endedAt": "2025-12-28T20:47:18.145902+00:00",
+        "source": "direct",
+        "mode": "individual"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null,
+      "source": "direct",
+      "mode": "individual"
+    },
+    "direct_20251228_214615_D-12282146": {
+      "runId": "direct_20251228_214615_D-12282146",
+      "site": "JOB_POS1",
+      "startedAt": "2025-12-28T21:46:15.021567",
+      "endedAt": "2025-12-28T20:48:23.298367+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "D-12282146"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "D-12282146"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "D-12282146",
+            "laser_text": "JOB_B",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2025-12-28T20:47:51.981504+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.05,
+        "engraverCO2g": 18.0,
+        "engraverCostEUR": 0.02,
+        "combinedCostEUR": 0.445206,
+        "orderRef": "BATCH-20251228-214823",
+        "startedAt": "2025-12-28T20:47:18.146917+00:00",
+        "endedAt": "2025-12-28T20:48:23.298367+00:00",
+        "source": "direct",
+        "mode": "individual"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null,
+      "source": "direct",
+      "mode": "individual"
+    },
+    "direct_20251228_215012_D-12282150": {
+      "runId": "direct_20251228_215012_D-12282150",
+      "site": "JOB_POS2",
+      "startedAt": "2025-12-28T21:50:12.271965",
+      "endedAt": "2025-12-28T20:51:22.777561+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "D-12282150"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS2",
+        "jobsProcessed": [
+          "D-12282150"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "D-12282150",
+            "laser_text": "Sarvesh",
+            "letters": 7,
+            "energy_kWh": 0.027,
+            "co2_g": 9.72,
+            "cost_eur": 0.0108,
+            "completed_at": "2025-12-28T20:50:49.216745+00:00"
+          }
+        ],
+        "agvBilledMeters": 23.323808,
+        "agvCostEUR": 0.466476,
+        "engraverEnergyKWh": 0.054,
+        "engraverCO2g": 19.44,
+        "engraverCostEUR": 0.0216,
+        "combinedCostEUR": 0.488076,
+        "orderRef": "BATCH-20251228-215122",
+        "startedAt": "2025-12-28T20:50:12.277726+00:00",
+        "endedAt": "2025-12-28T20:51:22.777561+00:00",
+        "source": "direct",
+        "mode": "individual"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null,
+      "source": "direct",
+      "mode": "individual"
+    },
+    "batch_20251228_215600_5jobs": {
+      "runId": "batch_20251228_215600_5jobs",
+      "site": "JOB_POS1",
+      "startedAt": "2025-12-28T21:56:00.545137",
+      "endedAt": "2025-12-28T20:57:38.796233+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "B-1228215601",
+        "B-1228215602",
+        "B-1228215603",
+        "B-1228215604",
+        "B-1228215605"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "B-1228215601",
+          "B-1228215602",
+          "B-1228215603",
+          "B-1228215604",
+          "B-1228215605"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "B-1228215601",
+            "laser_text": "fefwfwefw",
+            "letters": 9,
+            "energy_kWh": 0.029,
+            "co2_g": 10.44,
+            "cost_eur": 0.0116,
+            "completed_at": "2025-12-28T20:56:36.434637+00:00"
+          },
+          {
+            "order_no": "B-1228215602",
+            "laser_text": "sfswfwefwe",
+            "letters": 10,
+            "energy_kWh": 0.03,
+            "co2_g": 10.8,
+            "cost_eur": 0.012,
+            "completed_at": "2025-12-28T20:56:41.441953+00:00"
+          },
+          {
+            "order_no": "B-1228215603",
+            "laser_text": "fwefwfweeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+            "letters": 43,
+            "energy_kWh": 0.063,
+            "co2_g": 22.68,
+            "cost_eur": 0.0252,
+            "completed_at": "2025-12-28T20:57:02.951456+00:00"
+          },
+          {
+            "order_no": "B-1228215604",
+            "laser_text": "fe",
+            "letters": 2,
+            "energy_kWh": 0.022,
+            "co2_g": 7.92,
+            "cost_eur": 0.0088,
+            "completed_at": "2025-12-28T20:57:03.959225+00:00"
+          },
+          {
+            "order_no": "B-1228215605",
+            "laser_text": "fwefwef",
+            "letters": 7,
+            "energy_kWh": 0.027,
+            "co2_g": 9.72,
+            "cost_eur": 0.0108,
+            "completed_at": "2025-12-28T20:57:07.466748+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.054,
+        "engraverCO2g": 19.44,
+        "engraverCostEUR": 0.0216,
+        "combinedCostEUR": 0.446806,
+        "orderRef": "BATCH-20251228-215738",
+        "startedAt": "2025-12-28T20:56:00.551493+00:00",
+        "endedAt": "2025-12-28T20:57:38.796233+00:00",
+        "source": "batch",
+        "mode": "batch"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null,
+      "source": "batch",
+      "mode": "batch"
+    },
+    "scenario1_20251228_220915": {
+      "runId": "scenario1_20251228_220915",
+      "site": "JOB_POS1",
+      "startedAt": "2025-12-28T22:09:15.485439",
+      "endedAt": "2025-12-28T21:10:25.158161+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-1001",
+        "E-1002",
+        "E-1003"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "E-1001",
+          "E-1002",
+          "E-1003"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "E-1001",
+            "laser_text": "HELLO",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2025-12-28T21:09:49.318453+00:00"
+          },
+          {
+            "order_no": "E-1002",
+            "laser_text": "WORLD",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2025-12-28T21:09:51.825320+00:00"
+          },
+          {
+            "order_no": "E-1003",
+            "laser_text": "TEST",
+            "letters": 4,
+            "energy_kWh": 0.024,
+            "co2_g": 8.64,
+            "cost_eur": 0.0096,
+            "completed_at": "2025-12-28T21:09:53.831996+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.048,
+        "engraverCO2g": 17.28,
+        "engraverCostEUR": 0.0192,
+        "combinedCostEUR": 0.444406,
+        "orderRef": "BATCH-20251228-221025",
+        "startedAt": "2025-12-28T21:09:15.490670+00:00",
+        "endedAt": "2025-12-28T21:10:25.158161+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario2_20251228_221038": {
+      "runId": "scenario2_20251228_221038",
+      "site": "MULTI",
+      "startedAt": "2025-12-28T22:10:38.629488",
+      "endedAt": "2025-12-28T21:12:54.171499+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-2001",
+        "E-2002"
+      ],
+      "cycleSummary": {
+        "site": "MULTI",
+        "cycles": [
+          {
+            "site": "JOB_POS1",
+            "jobsProcessed": [
+              "E-2001"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2001",
+                "laser_text": "SMART",
+                "letters": 5,
+                "energy_kWh": 0.025,
+                "co2_g": 9.0,
+                "cost_eur": 0.01,
+                "completed_at": "2025-12-28T21:11:12.462027+00:00"
+              }
+            ],
+            "agvBilledMeters": 21.260292,
+            "agvCostEUR": 0.425206,
+            "engraverEnergyKWh": 0.05,
+            "engraverCO2g": 18.0,
+            "engraverCostEUR": 0.02,
+            "combinedCostEUR": 0.445206,
+            "orderRef": "BATCH-20251228-221143",
+            "startedAt": "2025-12-28T21:10:38.633391+00:00",
+            "endedAt": "2025-12-28T21:11:43.787190+00:00"
+          },
+          {
+            "site": "JOB_POS2",
+            "jobsProcessed": [
+              "E-2002"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2002",
+                "laser_text": "FACTORY",
+                "letters": 7,
+                "energy_kWh": 0.027,
+                "co2_g": 9.72,
+                "cost_eur": 0.0108,
+                "completed_at": "2025-12-28T21:12:20.729104+00:00"
+              }
+            ],
+            "agvBilledMeters": 23.323808,
+            "agvCostEUR": 0.466476,
+            "engraverEnergyKWh": 0.054,
+            "engraverCO2g": 19.44,
+            "engraverCostEUR": 0.0216,
+            "combinedCostEUR": 0.488076,
+            "orderRef": "BATCH-20251228-221254",
+            "startedAt": "2025-12-28T21:11:43.787190+00:00",
+            "endedAt": "2025-12-28T21:12:54.171499+00:00"
+          }
+        ],
+        "jobsProcessed": [
+          "E-2001",
+          "E-2002"
+        ],
+        "agvBilledMeters": 44.5841,
+        "agvCostEUR": 0.891682,
+        "engraverEnergyKWh": 0.10400000000000001,
+        "engraverCO2g": 37.44,
+        "engraverCostEUR": 0.0416,
+        "combinedCostEUR": 0.933282,
+        "orderRef": "SCENARIO2",
+        "startedAt": "2025-12-28T21:10:38.633391+00:00",
+        "endedAt": "2025-12-28T21:12:54.171499+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario2_20251228_222025": {
+      "runId": "scenario2_20251228_222025",
+      "site": "MULTI",
+      "startedAt": "2025-12-28T22:20:25.188876",
+      "endedAt": "2025-12-28T21:22:40.800214+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-2001",
+        "E-2002"
+      ],
+      "cycleSummary": {
+        "site": "MULTI",
+        "cycles": [
+          {
+            "site": "JOB_POS1",
+            "jobsProcessed": [
+              "E-2001"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2001",
+                "laser_text": "SMART",
+                "letters": 5,
+                "energy_kWh": 0.025,
+                "co2_g": 9.0,
+                "cost_eur": 0.01,
+                "completed_at": "2025-12-28T21:20:59.025323+00:00"
+              }
+            ],
+            "agvBilledMeters": 21.260292,
+            "agvCostEUR": 0.425206,
+            "engraverEnergyKWh": 0.05,
+            "engraverCO2g": 18.0,
+            "engraverCostEUR": 0.02,
+            "combinedCostEUR": 0.445206,
+            "orderRef": "BATCH-20251228-222130",
+            "startedAt": "2025-12-28T21:20:25.193661+00:00",
+            "endedAt": "2025-12-28T21:21:30.343960+00:00"
+          },
+          {
+            "site": "JOB_POS2",
+            "jobsProcessed": [
+              "E-2002"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2002",
+                "laser_text": "FACTORY",
+                "letters": 7,
+                "energy_kWh": 0.027,
+                "co2_g": 9.72,
+                "cost_eur": 0.0108,
+                "completed_at": "2025-12-28T21:22:07.290000+00:00"
+              }
+            ],
+            "agvBilledMeters": 23.323808,
+            "agvCostEUR": 0.466476,
+            "engraverEnergyKWh": 0.054,
+            "engraverCO2g": 19.44,
+            "engraverCostEUR": 0.0216,
+            "combinedCostEUR": 0.488076,
+            "orderRef": "BATCH-20251228-222240",
+            "startedAt": "2025-12-28T21:21:30.343960+00:00",
+            "endedAt": "2025-12-28T21:22:40.800214+00:00"
+          }
+        ],
+        "jobsProcessed": [
+          "E-2001",
+          "E-2002"
+        ],
+        "agvBilledMeters": 44.5841,
+        "agvCostEUR": 0.891682,
+        "engraverEnergyKWh": 0.10400000000000001,
+        "engraverCO2g": 37.44,
+        "engraverCostEUR": 0.0416,
+        "combinedCostEUR": 0.933282,
+        "orderRef": "SCENARIO2",
+        "startedAt": "2025-12-28T21:20:25.193661+00:00",
+        "endedAt": "2025-12-28T21:22:40.800214+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario1_20260108_132240": {
+      "runId": "scenario1_20260108_132240",
+      "site": "JOB_POS1",
+      "startedAt": "2026-01-08T13:22:40.574168",
+      "endedAt": "2026-01-08T12:23:50.323700+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-1001",
+        "E-1002",
+        "E-1003"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "E-1001",
+          "E-1002",
+          "E-1003"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "E-1001",
+            "laser_text": "HELLO",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-08T12:23:14.450567+00:00"
+          },
+          {
+            "order_no": "E-1002",
+            "laser_text": "WORLD",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-08T12:23:16.968686+00:00"
+          },
+          {
+            "order_no": "E-1003",
+            "laser_text": "TEST",
+            "letters": 4,
+            "energy_kWh": 0.024,
+            "co2_g": 8.64,
+            "cost_eur": 0.0096,
+            "completed_at": "2026-01-08T12:23:18.975948+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.048,
+        "engraverCO2g": 17.28,
+        "engraverCostEUR": 0.0192,
+        "combinedCostEUR": 0.444406,
+        "orderRef": "BATCH-20260108-132350",
+        "startedAt": "2026-01-08T12:22:40.579594+00:00",
+        "endedAt": "2026-01-08T12:23:50.323700+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario2_20260108_132354": {
+      "runId": "scenario2_20260108_132354",
+      "site": "MULTI",
+      "startedAt": "2026-01-08T13:23:54.462358",
+      "endedAt": "2026-01-08T12:26:10.098218+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-2001",
+        "E-2002"
+      ],
+      "cycleSummary": {
+        "site": "MULTI",
+        "cycles": [
+          {
+            "site": "JOB_POS1",
+            "jobsProcessed": [
+              "E-2001"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2001",
+                "laser_text": "SMART",
+                "letters": 5,
+                "energy_kWh": 0.025,
+                "co2_g": 9.0,
+                "cost_eur": 0.01,
+                "completed_at": "2026-01-08T12:24:28.340354+00:00"
+              }
+            ],
+            "agvBilledMeters": 21.260292,
+            "agvCostEUR": 0.425206,
+            "engraverEnergyKWh": 0.05,
+            "engraverCO2g": 18.0,
+            "engraverCostEUR": 0.02,
+            "combinedCostEUR": 0.445206,
+            "orderRef": "BATCH-20260108-132459",
+            "startedAt": "2026-01-08T12:23:54.467238+00:00",
+            "endedAt": "2026-01-08T12:24:59.696440+00:00"
+          },
+          {
+            "site": "JOB_POS2",
+            "jobsProcessed": [
+              "E-2002"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2002",
+                "laser_text": "FACTORY",
+                "letters": 7,
+                "energy_kWh": 0.027,
+                "co2_g": 9.72,
+                "cost_eur": 0.0108,
+                "completed_at": "2026-01-08T12:25:36.659206+00:00"
+              }
+            ],
+            "agvBilledMeters": 23.323808,
+            "agvCostEUR": 0.466476,
+            "engraverEnergyKWh": 0.054,
+            "engraverCO2g": 19.44,
+            "engraverCostEUR": 0.0216,
+            "combinedCostEUR": 0.488076,
+            "orderRef": "BATCH-20260108-132610",
+            "startedAt": "2026-01-08T12:24:59.696440+00:00",
+            "endedAt": "2026-01-08T12:26:10.098218+00:00"
+          }
+        ],
+        "jobsProcessed": [
+          "E-2001",
+          "E-2002"
+        ],
+        "agvBilledMeters": 44.5841,
+        "agvCostEUR": 0.891682,
+        "engraverEnergyKWh": 0.10400000000000001,
+        "engraverCO2g": 37.44,
+        "engraverCostEUR": 0.0416,
+        "combinedCostEUR": 0.933282,
+        "orderRef": "SCENARIO2",
+        "startedAt": "2026-01-08T12:23:54.467238+00:00",
+        "endedAt": "2026-01-08T12:26:10.098218+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "direct_20260109_101153_D-01091011": {
+      "runId": "direct_20260109_101153_D-01091011",
+      "site": "JOB_POS1",
+      "startedAt": "2026-01-09T10:11:53.566216",
+      "endedAt": "2026-01-09T09:12:59.258376+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "D-01091011"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "D-01091011"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "D-01091011",
+            "laser_text": "sdwdcw",
+            "letters": 6,
+            "energy_kWh": 0.026,
+            "co2_g": 9.36,
+            "cost_eur": 0.0104,
+            "completed_at": "2026-01-09T09:12:27.920599+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.052,
+        "engraverCO2g": 18.72,
+        "engraverCostEUR": 0.0208,
+        "combinedCostEUR": 0.446006,
+        "orderRef": "BATCH-20260109-101259",
+        "startedAt": "2026-01-09T09:11:53.574674+00:00",
+        "endedAt": "2026-01-09T09:12:59.258376+00:00",
+        "source": "direct",
+        "mode": "individual"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null,
+      "source": "direct",
+      "mode": "individual"
+    },
+    "scenario1_20260109_101816": {
+      "runId": "scenario1_20260109_101816",
+      "site": "JOB_POS1",
+      "startedAt": "2026-01-09T10:18:16.981697",
+      "endedAt": "2026-01-09T09:19:26.777148+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-1001",
+        "E-1002",
+        "E-1003"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "E-1001",
+          "E-1002",
+          "E-1003"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "E-1001",
+            "laser_text": "HELLO",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T09:18:50.915721+00:00"
+          },
+          {
+            "order_no": "E-1002",
+            "laser_text": "WORLD",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T09:18:53.423952+00:00"
+          },
+          {
+            "order_no": "E-1003",
+            "laser_text": "TEST",
+            "letters": 4,
+            "energy_kWh": 0.024,
+            "co2_g": 8.64,
+            "cost_eur": 0.0096,
+            "completed_at": "2026-01-09T09:18:55.432633+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.048,
+        "engraverCO2g": 17.28,
+        "engraverCostEUR": 0.0192,
+        "combinedCostEUR": 0.444406,
+        "orderRef": "BATCH-20260109-101926",
+        "startedAt": "2026-01-09T09:18:17.002803+00:00",
+        "endedAt": "2026-01-09T09:19:26.777148+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario2_20260109_101948": {
+      "runId": "scenario2_20260109_101948",
+      "site": "MULTI",
+      "startedAt": "2026-01-09T10:19:48.415304",
+      "endedAt": "2026-01-09T09:22:04.056321+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-2001",
+        "E-2002"
+      ],
+      "cycleSummary": {
+        "site": "MULTI",
+        "cycles": [
+          {
+            "site": "JOB_POS1",
+            "jobsProcessed": [
+              "E-2001"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2001",
+                "laser_text": "SMART",
+                "letters": 5,
+                "energy_kWh": 0.025,
+                "co2_g": 9.0,
+                "cost_eur": 0.01,
+                "completed_at": "2026-01-09T09:20:22.270413+00:00"
+              }
+            ],
+            "agvBilledMeters": 17.960292,
+            "agvCostEUR": 0.359206,
+            "engraverEnergyKWh": 0.05,
+            "engraverCO2g": 18.0,
+            "engraverCostEUR": 0.02,
+            "combinedCostEUR": 0.379206,
+            "orderRef": "BATCH-20260109-102053",
+            "startedAt": "2026-01-09T09:19:48.415304+00:00",
+            "endedAt": "2026-01-09T09:20:53.605287+00:00"
+          },
+          {
+            "site": "JOB_POS2",
+            "jobsProcessed": [
+              "E-2002"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2002",
+                "laser_text": "FACTORY",
+                "letters": 7,
+                "energy_kWh": 0.027,
+                "co2_g": 9.72,
+                "cost_eur": 0.0108,
+                "completed_at": "2026-01-09T09:21:30.560290+00:00"
+              }
+            ],
+            "agvBilledMeters": 23.323808,
+            "agvCostEUR": 0.466476,
+            "engraverEnergyKWh": 0.054,
+            "engraverCO2g": 19.44,
+            "engraverCostEUR": 0.0216,
+            "combinedCostEUR": 0.488076,
+            "orderRef": "BATCH-20260109-102204",
+            "startedAt": "2026-01-09T09:20:53.605287+00:00",
+            "endedAt": "2026-01-09T09:22:04.056321+00:00"
+          }
+        ],
+        "jobsProcessed": [
+          "E-2001",
+          "E-2002"
+        ],
+        "agvBilledMeters": 41.284099999999995,
+        "agvCostEUR": 0.825682,
+        "engraverEnergyKWh": 0.10400000000000001,
+        "engraverCO2g": 37.44,
+        "engraverCostEUR": 0.0416,
+        "combinedCostEUR": 0.867282,
+        "orderRef": "SCENARIO2",
+        "startedAt": "2026-01-09T09:19:48.415304+00:00",
+        "endedAt": "2026-01-09T09:22:04.056321+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario1_20260109_102355": {
+      "runId": "scenario1_20260109_102355",
+      "site": "JOB_POS1",
+      "startedAt": "2026-01-09T10:23:55.970503",
+      "endedAt": "2026-01-09T09:25:05.654395+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-1001",
+        "E-1002",
+        "E-1003"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "E-1001",
+          "E-1002",
+          "E-1003"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "E-1001",
+            "laser_text": "HELLO",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T09:24:29.810641+00:00"
+          },
+          {
+            "order_no": "E-1002",
+            "laser_text": "WORLD",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T09:24:32.318444+00:00"
+          },
+          {
+            "order_no": "E-1003",
+            "laser_text": "TEST",
+            "letters": 4,
+            "energy_kWh": 0.024,
+            "co2_g": 8.64,
+            "cost_eur": 0.0096,
+            "completed_at": "2026-01-09T09:24:34.324983+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.048,
+        "engraverCO2g": 17.28,
+        "engraverCostEUR": 0.0192,
+        "combinedCostEUR": 0.444406,
+        "orderRef": "BATCH-20260109-102505",
+        "startedAt": "2026-01-09T09:23:55.977251+00:00",
+        "endedAt": "2026-01-09T09:25:05.654395+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario2_20260109_102727": {
+      "runId": "scenario2_20260109_102727",
+      "site": "MULTI",
+      "startedAt": "2026-01-09T10:27:27.225858",
+      "endedAt": "2026-01-09T09:29:42.960643+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-2001",
+        "E-2002"
+      ],
+      "cycleSummary": {
+        "site": "MULTI",
+        "cycles": [
+          {
+            "site": "JOB_POS1",
+            "jobsProcessed": [
+              "E-2001"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2001",
+                "laser_text": "SMART",
+                "letters": 5,
+                "energy_kWh": 0.025,
+                "co2_g": 9.0,
+                "cost_eur": 0.01,
+                "completed_at": "2026-01-09T09:28:01.072398+00:00"
+              }
+            ],
+            "agvBilledMeters": 21.260292,
+            "agvCostEUR": 0.425206,
+            "engraverEnergyKWh": 0.05,
+            "engraverCO2g": 18.0,
+            "engraverCostEUR": 0.02,
+            "combinedCostEUR": 0.445206,
+            "orderRef": "BATCH-20260109-102832",
+            "startedAt": "2026-01-09T09:27:27.232652+00:00",
+            "endedAt": "2026-01-09T09:28:32.399949+00:00"
+          },
+          {
+            "site": "JOB_POS2",
+            "jobsProcessed": [
+              "E-2002"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2002",
+                "laser_text": "FACTORY",
+                "letters": 7,
+                "energy_kWh": 0.027,
+                "co2_g": 9.72,
+                "cost_eur": 0.0108,
+                "completed_at": "2026-01-09T09:29:09.456091+00:00"
+              }
+            ],
+            "agvBilledMeters": 23.323808,
+            "agvCostEUR": 0.466476,
+            "engraverEnergyKWh": 0.054,
+            "engraverCO2g": 19.44,
+            "engraverCostEUR": 0.0216,
+            "combinedCostEUR": 0.488076,
+            "orderRef": "BATCH-20260109-102942",
+            "startedAt": "2026-01-09T09:28:32.399949+00:00",
+            "endedAt": "2026-01-09T09:29:42.960643+00:00"
+          }
+        ],
+        "jobsProcessed": [
+          "E-2001",
+          "E-2002"
+        ],
+        "agvBilledMeters": 44.5841,
+        "agvCostEUR": 0.891682,
+        "engraverEnergyKWh": 0.10400000000000001,
+        "engraverCO2g": 37.44,
+        "engraverCostEUR": 0.0416,
+        "combinedCostEUR": 0.933282,
+        "orderRef": "SCENARIO2",
+        "startedAt": "2026-01-09T09:27:27.232652+00:00",
+        "endedAt": "2026-01-09T09:29:42.960643+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario1_20260109_103523": {
+      "runId": "scenario1_20260109_103523",
+      "site": "JOB_POS1",
+      "startedAt": "2026-01-09T10:35:23.439223",
+      "endedAt": "2026-01-09T09:36:33.124443+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-1001",
+        "E-1002",
+        "E-1003"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "E-1001",
+          "E-1002",
+          "E-1003"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "E-1001",
+            "laser_text": "HELLO",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T09:35:57.286630+00:00"
+          },
+          {
+            "order_no": "E-1002",
+            "laser_text": "WORLD",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T09:35:59.793173+00:00"
+          },
+          {
+            "order_no": "E-1003",
+            "laser_text": "TEST",
+            "letters": 4,
+            "energy_kWh": 0.024,
+            "co2_g": 8.64,
+            "cost_eur": 0.0096,
+            "completed_at": "2026-01-09T09:36:01.801257+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.048,
+        "engraverCO2g": 17.28,
+        "engraverCostEUR": 0.0192,
+        "combinedCostEUR": 0.444406,
+        "orderRef": "BATCH-20260109-103633",
+        "startedAt": "2026-01-09T09:35:23.449174+00:00",
+        "endedAt": "2026-01-09T09:36:33.124443+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario1_20260109_104527": {
+      "runId": "scenario1_20260109_104527",
+      "site": "JOB_POS1",
+      "startedAt": "2026-01-09T10:45:27.743770",
+      "endedAt": "2026-01-09T09:46:37.522147+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-1001",
+        "E-1002",
+        "E-1003"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "E-1001",
+          "E-1002",
+          "E-1003"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "E-1001",
+            "laser_text": "HELLO",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T09:46:01.648854+00:00"
+          },
+          {
+            "order_no": "E-1002",
+            "laser_text": "WORLD",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T09:46:04.157312+00:00"
+          },
+          {
+            "order_no": "E-1003",
+            "laser_text": "TEST",
+            "letters": 4,
+            "energy_kWh": 0.024,
+            "co2_g": 8.64,
+            "cost_eur": 0.0096,
+            "completed_at": "2026-01-09T09:46:06.166161+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.048,
+        "engraverCO2g": 17.28,
+        "engraverCostEUR": 0.0192,
+        "combinedCostEUR": 0.444406,
+        "orderRef": "BATCH-20260109-104637",
+        "startedAt": "2026-01-09T09:45:27.749608+00:00",
+        "endedAt": "2026-01-09T09:46:37.522147+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario2_20260109_104641": {
+      "runId": "scenario2_20260109_104641",
+      "site": "MULTI",
+      "startedAt": "2026-01-09T10:46:41.516439",
+      "endedAt": "2026-01-09T09:48:57.046035+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-2001",
+        "E-2002"
+      ],
+      "cycleSummary": {
+        "site": "MULTI",
+        "cycles": [
+          {
+            "site": "JOB_POS1",
+            "jobsProcessed": [
+              "E-2001"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2001",
+                "laser_text": "SMART",
+                "letters": 5,
+                "energy_kWh": 0.025,
+                "co2_g": 9.0,
+                "cost_eur": 0.01,
+                "completed_at": "2026-01-09T09:47:15.357765+00:00"
+              }
+            ],
+            "agvBilledMeters": 21.260292,
+            "agvCostEUR": 0.425206,
+            "engraverEnergyKWh": 0.05,
+            "engraverCO2g": 18.0,
+            "engraverCostEUR": 0.02,
+            "combinedCostEUR": 0.445206,
+            "orderRef": "BATCH-20260109-104746",
+            "startedAt": "2026-01-09T09:46:41.522294+00:00",
+            "endedAt": "2026-01-09T09:47:46.681667+00:00"
+          },
+          {
+            "site": "JOB_POS2",
+            "jobsProcessed": [
+              "E-2002"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2002",
+                "laser_text": "FACTORY",
+                "letters": 7,
+                "energy_kWh": 0.027,
+                "co2_g": 9.72,
+                "cost_eur": 0.0108,
+                "completed_at": "2026-01-09T09:48:23.617152+00:00"
+              }
+            ],
+            "agvBilledMeters": 23.323808,
+            "agvCostEUR": 0.466476,
+            "engraverEnergyKWh": 0.054,
+            "engraverCO2g": 19.44,
+            "engraverCostEUR": 0.0216,
+            "combinedCostEUR": 0.488076,
+            "orderRef": "BATCH-20260109-104857",
+            "startedAt": "2026-01-09T09:47:46.681667+00:00",
+            "endedAt": "2026-01-09T09:48:57.046035+00:00"
+          }
+        ],
+        "jobsProcessed": [
+          "E-2001",
+          "E-2002"
+        ],
+        "agvBilledMeters": 44.5841,
+        "agvCostEUR": 0.891682,
+        "engraverEnergyKWh": 0.10400000000000001,
+        "engraverCO2g": 37.44,
+        "engraverCostEUR": 0.0416,
+        "combinedCostEUR": 0.933282,
+        "orderRef": "SCENARIO2",
+        "startedAt": "2026-01-09T09:46:41.522294+00:00",
+        "endedAt": "2026-01-09T09:48:57.046035+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario1_20260109_105003": {
+      "runId": "scenario1_20260109_105003",
+      "site": "JOB_POS1",
+      "startedAt": "2026-01-09T10:50:03.673501",
+      "endedAt": "2026-01-09T09:51:13.395779+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-1001",
+        "E-1002",
+        "E-1003"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "E-1001",
+          "E-1002",
+          "E-1003"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "E-1001",
+            "laser_text": "HELLO",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T09:50:37.562142+00:00"
+          },
+          {
+            "order_no": "E-1002",
+            "laser_text": "WORLD",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T09:50:40.069871+00:00"
+          },
+          {
+            "order_no": "E-1003",
+            "laser_text": "TEST",
+            "letters": 4,
+            "energy_kWh": 0.024,
+            "co2_g": 8.64,
+            "cost_eur": 0.0096,
+            "completed_at": "2026-01-09T09:50:42.076642+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.048,
+        "engraverCO2g": 17.28,
+        "engraverCostEUR": 0.0192,
+        "combinedCostEUR": 0.444406,
+        "orderRef": "BATCH-20260109-105113",
+        "startedAt": "2026-01-09T09:50:03.720824+00:00",
+        "endedAt": "2026-01-09T09:51:13.395779+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario2_20260109_105117": {
+      "runId": "scenario2_20260109_105117",
+      "site": "MULTI",
+      "startedAt": "2026-01-09T10:51:17.378712",
+      "endedAt": "2026-01-09T09:53:32.928190+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-2001",
+        "E-2002"
+      ],
+      "cycleSummary": {
+        "site": "MULTI",
+        "cycles": [
+          {
+            "site": "JOB_POS1",
+            "jobsProcessed": [
+              "E-2001"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2001",
+                "laser_text": "SMART",
+                "letters": 5,
+                "energy_kWh": 0.025,
+                "co2_g": 9.0,
+                "cost_eur": 0.01,
+                "completed_at": "2026-01-09T09:51:51.231063+00:00"
+              }
+            ],
+            "agvBilledMeters": 21.260292,
+            "agvCostEUR": 0.425206,
+            "engraverEnergyKWh": 0.05,
+            "engraverCO2g": 18.0,
+            "engraverCostEUR": 0.02,
+            "combinedCostEUR": 0.445206,
+            "orderRef": "BATCH-20260109-105222",
+            "startedAt": "2026-01-09T09:51:17.387115+00:00",
+            "endedAt": "2026-01-09T09:52:22.567681+00:00"
+          },
+          {
+            "site": "JOB_POS2",
+            "jobsProcessed": [
+              "E-2002"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2002",
+                "laser_text": "FACTORY",
+                "letters": 7,
+                "energy_kWh": 0.027,
+                "co2_g": 9.72,
+                "cost_eur": 0.0108,
+                "completed_at": "2026-01-09T09:52:59.505343+00:00"
+              }
+            ],
+            "agvBilledMeters": 23.323808,
+            "agvCostEUR": 0.466476,
+            "engraverEnergyKWh": 0.054,
+            "engraverCO2g": 19.44,
+            "engraverCostEUR": 0.0216,
+            "combinedCostEUR": 0.488076,
+            "orderRef": "BATCH-20260109-105332",
+            "startedAt": "2026-01-09T09:52:22.567681+00:00",
+            "endedAt": "2026-01-09T09:53:32.928190+00:00"
+          }
+        ],
+        "jobsProcessed": [
+          "E-2001",
+          "E-2002"
+        ],
+        "agvBilledMeters": 44.5841,
+        "agvCostEUR": 0.891682,
+        "engraverEnergyKWh": 0.10400000000000001,
+        "engraverCO2g": 37.44,
+        "engraverCostEUR": 0.0416,
+        "combinedCostEUR": 0.933282,
+        "orderRef": "SCENARIO2",
+        "startedAt": "2026-01-09T09:51:17.387115+00:00",
+        "endedAt": "2026-01-09T09:53:32.928190+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario1_20260109_105739": {
+      "runId": "scenario1_20260109_105739",
+      "site": "JOB_POS1",
+      "startedAt": "2026-01-09T10:57:39.157298",
+      "endedAt": "2026-01-09T09:58:48.846929+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-1001",
+        "E-1002",
+        "E-1003"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "E-1001",
+          "E-1002",
+          "E-1003"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "E-1001",
+            "laser_text": "HELLO",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T09:58:13.003773+00:00"
+          },
+          {
+            "order_no": "E-1002",
+            "laser_text": "WORLD",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T09:58:15.511039+00:00"
+          },
+          {
+            "order_no": "E-1003",
+            "laser_text": "TEST",
+            "letters": 4,
+            "energy_kWh": 0.024,
+            "co2_g": 8.64,
+            "cost_eur": 0.0096,
+            "completed_at": "2026-01-09T09:58:17.521657+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.048,
+        "engraverCO2g": 17.28,
+        "engraverCostEUR": 0.0192,
+        "combinedCostEUR": 0.444406,
+        "orderRef": "BATCH-20260109-105848",
+        "startedAt": "2026-01-09T09:57:39.171435+00:00",
+        "endedAt": "2026-01-09T09:58:48.846929+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 360.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario1_20260109_110040": {
+      "runId": "scenario1_20260109_110040",
+      "site": "JOB_POS1",
+      "startedAt": "2026-01-09T11:00:40.132619",
+      "endedAt": "2026-01-09T10:01:49.797578+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-1001",
+        "E-1002",
+        "E-1003"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "E-1001",
+          "E-1002",
+          "E-1003"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "E-1001",
+            "laser_text": "HELLO",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T10:01:13.970455+00:00"
+          },
+          {
+            "order_no": "E-1002",
+            "laser_text": "WORLD",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T10:01:16.477524+00:00"
+          },
+          {
+            "order_no": "E-1003",
+            "laser_text": "TEST",
+            "letters": 4,
+            "energy_kWh": 0.024,
+            "co2_g": 8.64,
+            "cost_eur": 0.0096,
+            "completed_at": "2026-01-09T10:01:18.485016+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.048,
+        "engraverCO2g": 17.28,
+        "engraverCostEUR": 0.0192,
+        "combinedCostEUR": 0.444406,
+        "orderRef": "BATCH-20260109-110149",
+        "startedAt": "2026-01-09T10:00:40.141846+00:00",
+        "endedAt": "2026-01-09T10:01:49.797578+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 420.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario1_20260109_110301": {
+      "runId": "scenario1_20260109_110301",
+      "site": "JOB_POS1",
+      "startedAt": "2026-01-09T11:03:01.311758",
+      "endedAt": "2026-01-09T10:04:10.988820+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-1001",
+        "E-1002",
+        "E-1003"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "E-1001",
+          "E-1002",
+          "E-1003"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "E-1001",
+            "laser_text": "HELLO",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T10:03:35.155453+00:00"
+          },
+          {
+            "order_no": "E-1002",
+            "laser_text": "WORLD",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T10:03:37.663706+00:00"
+          },
+          {
+            "order_no": "E-1003",
+            "laser_text": "TEST",
+            "letters": 4,
+            "energy_kWh": 0.024,
+            "co2_g": 8.64,
+            "cost_eur": 0.0096,
+            "completed_at": "2026-01-09T10:03:39.671108+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.048,
+        "engraverCO2g": 17.28,
+        "engraverCostEUR": 0.0192,
+        "combinedCostEUR": 0.444406,
+        "orderRef": "BATCH-20260109-110410",
+        "startedAt": "2026-01-09T10:03:01.320783+00:00",
+        "endedAt": "2026-01-09T10:04:10.988820+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 420.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "scenario2_20260109_110550": {
+      "runId": "scenario2_20260109_110550",
+      "site": "MULTI",
+      "startedAt": "2026-01-09T11:05:50.774402",
+      "endedAt": "2026-01-09T10:08:06.395083+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-2001",
+        "E-2002"
+      ],
+      "cycleSummary": {
+        "site": "MULTI",
+        "cycles": [
+          {
+            "site": "JOB_POS1",
+            "jobsProcessed": [
+              "E-2001"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2001",
+                "laser_text": "SMART",
+                "letters": 5,
+                "energy_kWh": 0.025,
+                "co2_g": 9.0,
+                "cost_eur": 0.01,
+                "completed_at": "2026-01-09T10:06:24.634212+00:00"
+              }
+            ],
+            "agvBilledMeters": 21.260292,
+            "agvCostEUR": 0.425206,
+            "engraverEnergyKWh": 0.05,
+            "engraverCO2g": 18.0,
+            "engraverCostEUR": 0.02,
+            "combinedCostEUR": 0.445206,
+            "orderRef": "BATCH-20260109-110655",
+            "startedAt": "2026-01-09T10:05:50.782376+00:00",
+            "endedAt": "2026-01-09T10:06:55.950828+00:00"
+          },
+          {
+            "site": "JOB_POS2",
+            "jobsProcessed": [
+              "E-2002"
+            ],
+            "individualJobs": [
+              {
+                "order_no": "E-2002",
+                "laser_text": "FACTORY",
+                "letters": 7,
+                "energy_kWh": 0.027,
+                "co2_g": 9.72,
+                "cost_eur": 0.0108,
+                "completed_at": "2026-01-09T10:07:32.905041+00:00"
+              }
+            ],
+            "agvBilledMeters": 23.323808,
+            "agvCostEUR": 0.466476,
+            "engraverEnergyKWh": 0.054,
+            "engraverCO2g": 19.44,
+            "engraverCostEUR": 0.0216,
+            "combinedCostEUR": 0.488076,
+            "orderRef": "BATCH-20260109-110806",
+            "startedAt": "2026-01-09T10:06:55.950828+00:00",
+            "endedAt": "2026-01-09T10:08:06.395083+00:00"
+          }
+        ],
+        "jobsProcessed": [
+          "E-2001",
+          "E-2002"
+        ],
+        "agvBilledMeters": 44.5841,
+        "agvCostEUR": 0.891682,
+        "engraverEnergyKWh": 0.10400000000000001,
+        "engraverCO2g": 37.44,
+        "engraverCostEUR": 0.0416,
+        "combinedCostEUR": 0.933282,
+        "orderRef": "SCENARIO2",
+        "startedAt": "2026-01-09T10:05:50.782376+00:00",
+        "endedAt": "2026-01-09T10:08:06.395083+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 420.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "batch_20260109_123532_2jobs": {
+      "runId": "batch_20260109_123532_2jobs",
+      "site": "JOB_POS1",
+      "startedAt": "2026-01-09T12:35:32.061008",
+      "endedAt": "2026-01-09T11:36:46.899787+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "B-0109123501",
+        "B-0109123502"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "B-0109123501",
+          "B-0109123502"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "B-0109123501",
+            "laser_text": "kkfjeinciemmeim",
+            "letters": 15,
+            "energy_kWh": 0.035,
+            "co2_g": 12.6,
+            "cost_eur": 0.014,
+            "completed_at": "2026-01-09T11:36:10.991905+00:00"
+          },
+          {
+            "order_no": "B-0109123502",
+            "laser_text": "nrnimoekf",
+            "letters": 9,
+            "energy_kWh": 0.029,
+            "co2_g": 10.44,
+            "cost_eur": 0.0116,
+            "completed_at": "2026-01-09T11:36:15.503902+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.058,
+        "engraverCO2g": 20.88,
+        "engraverCostEUR": 0.0232,
+        "combinedCostEUR": 0.448406,
+        "orderRef": "BATCH-20260109-123646",
+        "startedAt": "2026-01-09T11:35:32.081786+00:00",
+        "endedAt": "2026-01-09T11:36:46.899787+00:00",
+        "source": "batch",
+        "mode": "batch"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 420.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null,
+      "source": "batch",
+      "mode": "batch"
+    },
+    "scenario1_20260109_125057": {
+      "runId": "scenario1_20260109_125057",
+      "site": "JOB_POS1",
+      "startedAt": "2026-01-09T12:50:57.383429",
+      "endedAt": "2026-01-09T11:52:07.299396+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "E-1001",
+        "E-1002",
+        "E-1003"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "E-1001",
+          "E-1002",
+          "E-1003"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "E-1001",
+            "laser_text": "HELLO",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T11:51:31.357687+00:00"
+          },
+          {
+            "order_no": "E-1002",
+            "laser_text": "WORLD",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T11:51:33.870553+00:00"
+          },
+          {
+            "order_no": "E-1003",
+            "laser_text": "TEST",
+            "letters": 4,
+            "energy_kWh": 0.024,
+            "co2_g": 8.64,
+            "cost_eur": 0.0096,
+            "completed_at": "2026-01-09T11:51:35.882773+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.048,
+        "engraverCO2g": 17.28,
+        "engraverCostEUR": 0.0192,
+        "combinedCostEUR": 0.444406,
+        "orderRef": "BATCH-20260109-125207",
+        "startedAt": "2026-01-09T11:50:57.426116+00:00",
+        "endedAt": "2026-01-09T11:52:07.299396+00:00"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 420.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null
+    },
+    "batch_20260109_135234_2jobs": {
+      "runId": "batch_20260109_135234_2jobs",
+      "site": "JOB_POS1",
+      "startedAt": "2026-01-09T13:52:34.877029",
+      "endedAt": "2026-01-09T12:53:42.299296+00:00",
+      "status": "completed",
+      "jobsProcessed": [
+        "B-0109135201",
+        "B-0109135202"
+      ],
+      "cycleSummary": {
+        "site": "JOB_POS1",
+        "jobsProcessed": [
+          "B-0109135201",
+          "B-0109135202"
+        ],
+        "individualJobs": [
+          {
+            "order_no": "B-0109135201",
+            "laser_text": "fguyg",
+            "letters": 5,
+            "energy_kWh": 0.025,
+            "co2_g": 9.0,
+            "cost_eur": 0.01,
+            "completed_at": "2026-01-09T12:53:08.899103+00:00"
+          },
+          {
+            "order_no": "B-0109135202",
+            "laser_text": "vtyt",
+            "letters": 4,
+            "energy_kWh": 0.024,
+            "co2_g": 8.64,
+            "cost_eur": 0.0096,
+            "completed_at": "2026-01-09T12:53:10.909711+00:00"
+          }
+        ],
+        "agvBilledMeters": 21.260292,
+        "agvCostEUR": 0.425206,
+        "engraverEnergyKWh": 0.048,
+        "engraverCO2g": 17.28,
+        "engraverCostEUR": 0.0192,
+        "combinedCostEUR": 0.444406,
+        "orderRef": "BATCH-20260109-135342",
+        "startedAt": "2026-01-09T12:52:34.906448+00:00",
+        "endedAt": "2026-01-09T12:53:42.299296+00:00",
+        "source": "batch",
+        "mode": "batch"
+      },
+      "configSnapshot": {
+        "currency": "EUR",
+        "engraver": {
+          "emissionFactor_g_per_kWh": 420.0,
+          "costPerEnergyUnit_EUR_per_kWh": 0.4,
+          "baseIdle_kWh": 0.02,
+          "k_laser_kWh_per_sec_at_power1": 0.002,
+          "default_powerPreset": "Standard",
+          "seconds_per_letter": 0.5
+        },
+        "agv": {
+          "costPerMeter_EUR": 0.02,
+          "speed_m_per_s": 0.5
+        },
+        "progress_step": 5,
+        "poll_interval_s": 0.05
+      },
+      "error": null,
+      "source": "batch",
+      "mode": "batch"
+    }
+  }
+}
